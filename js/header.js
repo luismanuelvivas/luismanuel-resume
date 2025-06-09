@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         '<div class="container mx-auto flex justify-between items-center">' +
             '<div class="flex items-center space-x-4">' +
                 '<div class="text-2xl font-bold bg-white text-blue-800 px-3 py-1 rounded-md">LV</div>' +
-                '<h1 class="text-xl md:text-2xl font-bold">Luis Vivas</h1>' +
             '</div>' +
             
             '<button id="menu-toggle" class="lg:hidden focus:outline-none">' +
