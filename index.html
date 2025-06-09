@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Vivas - Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 1s ease-in-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 transition-colors duration-300">
+
+ <header id="header">
+ </header>
+  
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-indigo-800 to-indigo-600 text-white p-8 rounded-lg shadow-lg mb-6 animate-fade-in">
+      <h1 class="text-4xl font-bold mb-2 animate-slide-up">Luis Vivas</h1>
+      <p class="text-xl mb-4 animate-slide-up" style="animation-delay: 0.2s">Front End Developer</p>
+      <div class="flex flex-wrap gap-4 text-indigo-200 animate-slide-up" style="animation-delay: 0.4s">
+        <p><i class="fas fa-envelope mr-2"></i> luis.manuel.vivas.r@gmail.com</p>
+        <p><i class="fas fa-phone mr-2"></i> +584121531409</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Barquisimeto, Venezuela</p>
+        <p><i class="fab fa-linkedin mr-2 animate-pulse-slow"></i> <a href="https://www.linkedin.com/in/luis-vivas-3b7a23198/" class="hover:underline hover:text-white transition-colors" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Left Column -->
+      <div class="md:col-span-2 space-y-6">
+        <!-- Work Experience -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up" style="animation-delay: 0.2s">
+          <h2 class="text-2xl font-bold mb-4 text-indigo-400 border-b border-indigo-600 pb-2">Work Experience</h2>
+          
+          <div class="mb-6 group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Eastmont Digital</h3>
+            <p class="text-gray-400">Front End Developer (Shopify, Wordpress, BigCommerce) | Jun 2023 – Present</p>
+            <p class="text-gray-500 italic">Atlanta, USA (Remote)</p>
+            <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-300">
+              <li class="hover:text-indigo-200 transition-colors">Create custom sections for shopify themes</li>
+              <li class="hover:text-indigo-200 transition-colors">Develop or edit Shopify themes using liquid</li>
+              <li class="hover:text-indigo-200 transition-colors">Setup and integrate apps to Shopify themes for clients</li>
+              <li class="hover:text-indigo-200 transition-colors">Meet and train clients on Shopify</li>
+              <li class="hover:text-indigo-200 transition-colors">Develop BigCommerce and Wordpress websites</li>
+            </ul>
+          </div>
+
+          <div class="mb-6 group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Meraki Vision Canada</h3>
+            <p class="text-gray-400">Front End Developer (Shopify and CMS) | Jun 2022 – Jun 2023</p>
+            <p class="text-gray-500 italic">Canada (Remote)</p>
+            <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-300">
+              <li class="hover:text-indigo-200 transition-colors">Develop Front End solutions for Shopify projects</li>
+              <li class="hover:text-indigo-200 transition-colors">Create or edit Shopify themes</li>
+              <li class="hover:text-indigo-200 transition-colors">Develop custom sections for Shopify projects</li>
+              <li class="hover:text-indigo-200 transition-colors">Setup and integrate apps for Shopify projects</li>
+              <li class="hover:text-indigo-200 transition-colors">Develop wordpress websites</li>
+              <li class="hover:text-indigo-200 transition-colors">Teach wordpress development to new developers</li>
+            </ul>
+          </div>
+
+          <div class="mb-6 group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">ANT Digital</h3>
+            <p class="text-gray-400">Web Developer | Jun 2021 – Jun 2022</p>
+            <p class="text-gray-500 italic">Santiago, Chile (Remote)</p>
+            <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-300">
+              <li class="hover:text-indigo-200 transition-colors">Develop front end solutions for client's</li>
+              <li class="hover:text-indigo-200 transition-colors">Create and setup development enviroments for new projects</li>
+              <li class="hover:text-indigo-200 transition-colors">Wordpress and Prestashop development</li>
+              <li class="hover:text-indigo-200 transition-colors">Manage hostings, VPS, and infrastructure for all the projects</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Soñar Despierto (Volunteer)</h3>
+            <p class="text-gray-400">Staff Director | 2019 – 2022</p>
+            <p class="text-gray-500 italic">Barquisimeto, Venezuela</p>
+            <ul class="mt-2 list-disc pl-5 space-y-1 text-gray-300">
+              <li class="hover:text-indigo-200 transition-colors">Lead a group of 20 volunteers</li>
+              <li class="hover:text-indigo-200 transition-colors">Find founds and donation for the organization</li>
+              <li class="hover:text-indigo-200 transition-colors">Organize social work activities for children in hospitals</li>
+              <li class="hover:text-indigo-200 transition-colors">Find more volunteers for the organization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up" style="animation-delay: 0.3s">
+          <h2 class="text-2xl font-bold mb-4 text-indigo-400 border-b border-indigo-600 pb-2">Education</h2>
+          <div class="mb-4 group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Universidad Yacambú Lara, Venezuela</h3>
+            <p class="text-gray-400">Engineer's Degree in Electrical and Electronics Engineering | Jan 2017 – Dec 2022</p>
+          </div>
+          <div class="mb-4 group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Orange Technical College Winter Park & Avalon Florida, USA</h3>
+            <p class="text-gray-400">English for Speakers of Other Languages - Advanced Level | Jun 2016 – Dec 2016</p>
+          </div>
+          <div class="group">
+            <h3 class="text-xl font-semibold group-hover:text-indigo-300 transition-colors">Platzi Remote</h3>
+            <p class="text-gray-400">Front End Developer | 2020 – 2020</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-6">
+        <!-- Skills -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up" style="animation-delay: 0.4s">
+          <h2 class="text-2xl font-bold mb-4 text-indigo-400 border-b border-indigo-600 pb-2">Skills</h2>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Technical:</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">HTML/CSS</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">JavaScript</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Liquid</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Shopify</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Shopify CLI</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">WordPress</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Stencil CLI</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">BigCommerce</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-semibold mb-2">Non-Technical:</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Bilingual</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Proactive</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Leadership</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Responsibility</span>
+              <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm hover:bg-indigo-800 transition-colors">Time management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up" style="animation-delay: 0.5s">
+          <h2 class="text-2xl font-bold mb-4 text-indigo-400 border-b border-indigo-600 pb-2">About</h2>
+          <p class="text-gray-300 group-hover:text-gray-200 transition-colors">Experienced Front End Developer specializing in e-commerce platforms including Shopify, WordPress, and BigCommerce. Skilled in creating custom themes, sections, and integrating third-party apps. Passionate about teaching and mentoring other developers.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer id="footer"></footer>
+</body>
+</html>
